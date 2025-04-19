@@ -16,7 +16,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import java.nio.file.Paths;
 
-class AppTests {
+class App3Tests {
 	// Shared between all tests in this class.
 	  static Playwright playwright;
 	  static Browser browser;
@@ -89,5 +89,10 @@ class AppTests {
 	    System.out.println(">>>>>>" + page.url());
 	    page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("e:/evidencia/consulta_ads.png")));
 	    assertEquals("https://fatecipiranga.cps.sp.gov.br/?s=ADS", page.url());
+	  }
+	@Test
+	  void cadastrarCliente() {
+	    page.navigate("http://localhost:5173/");
+	  
 	  }
 }

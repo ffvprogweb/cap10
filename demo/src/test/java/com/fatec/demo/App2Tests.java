@@ -49,7 +49,7 @@ class App2Tests {
 	}
 
 	@Test
-	void test(Page page) {
+	void pesquisaNaFatec(Page page) {
 		page.navigate("https://fatecipiranga.cps.sp.gov.br/");
 		page.getByRole(AriaRole.SEARCHBOX, new Page.GetByRoleOptions().setName("O que deseja localizar?")).fill("ads");
 		page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("")).click();

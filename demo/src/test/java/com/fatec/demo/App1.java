@@ -2,7 +2,7 @@ package com.fatec.demo;
 
 import com.microsoft.playwright.*;
 
-public class App {
+public class App1 {
     public static void main(String[] args) {
         try (Playwright playwright = Playwright.create()) {
         	playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(150));
